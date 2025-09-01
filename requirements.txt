@@ -1,0 +1,4 @@
+cachetools==6.1.0
+currencies==2020.12.12
+Requests==2.32.5
+streamlit==1.48.1
