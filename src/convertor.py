@@ -1,7 +1,7 @@
 import requests
 from cachetools import cached, TTLCache
 
-cache = TTLCache(maxsize=100, ttl=300)
+cache = TTLCache(maxsize=100, ttl=3*60*60)
 
 @cached(cache)
 def get_exchange_rate(src_currency, dst_currency):
