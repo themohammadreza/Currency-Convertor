@@ -12,7 +12,7 @@ if st.button("Convert"):
     exchange_rate = get_exchange_rate(src_currency, dst_currency)
     result = convert_currency(amount, exchange_rate)
     if result:
-        st.success(f"{amount} {src_currency} = {result} {dst_currency}")
+        st.success(f"{amount} {src_currency} = {result:.2f} {dst_currency}")
     else:
         st.error("Conversion failed.")
 
